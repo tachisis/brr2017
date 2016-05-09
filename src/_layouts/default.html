@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>
+      {% if page.title %}
+        {{ page.title }}
+      {% else %}
+        РИ «Барраяр. Время перемен»
+      {% endif %}
+    </title>
+
+    <link rel="stylesheet" href="/static/css/website/website.css" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/i/src/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/i/src/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/i/src/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/i/src/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/i/src/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/i/src/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/i/src/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/i/src/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/i/src/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/static/i/src/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/i/src/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/i/src/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/i/src/favicon-16x16.png">
+    <link rel="manifest" href="/static/i/src/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/static/i/src/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    {% include head.html %}
+    
+    <div class="wrap">
+        {{ content }}
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+  <script>
+
+  var layers = [],
+      layerElements = document.getElementsByClassName('js-layer'),
+      _scrollY = window.scrollY;
+
+    function init() {
+      for (var i = 0; i < layerElements.length; i += 1) {
+        var el = layerElements[i];
+        var offset = layerElements[i].dataset.offset;
+        layers.push({el: el, y: 0, offset: offset});
+      }
+
+      window.addEventListener('scroll', handle_scroll);
+      requestAnimationFrame(animate);
+    }
+
+    function handle_scroll(e) {
+      _scrollY = window.scrollY;
+    }
+
+    function animate() {
+      for (var i = 0; i < layers.length; i += 1) {
+        var oldY = layers[i].y;
+        layers[i].y = _scrollY * layers[i].offset;
+
+        if (oldY !== layers[i].y) {
+          layers[i].el.style.transform = 'translateY(' + layers[i].y + 'px)';
+        }
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    init();
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+BODY {
+  height: 100%;
+  margin: 0;
+}
+
+HTML {
+  -webkit-font-variant-ligatures: no-common-ligatures;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+
+  height: 100%;
+
+  color: color(text);
+  background: color(layout);
+
+  direction: ltr;
+}
+
+A {
+
+  color: color(link);
+
+  &:hover {
+    color: color(link, hover);
+  }
+}
+
+IMG {
+  display: inline-block;
+
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: middle;
+}
+
+IMG[width],
+IMG[heigth] {
+  max-width: none;
+}
+
+INPUT {
+  &::-ms-clear {
+    display: none;
+  }
+
+  &::-ms-reveal {
+    display: none;
+  }
+}
+
+a > svg {
+  pointer-events: none;
+}

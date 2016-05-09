@@ -1,0 +1,137 @@
+// --------------------------------------------------
+// Vocabulary mixins (for BEM and namespacing)
+//---------------------------------------------------
+
+//---------------------------------------------
+// Creates a new, top-level Block
+// --------------------------------------------
+// If a type (e.g. component, module, utility)
+// is given, it will auto-generate a namespaced
+// class that adheres to Harry Roberts' post
+// on namespaced BEM classes.
+// If given: +new(product-item)
+// Produces: .product-item
+
+@mixin new($name) {
+  @at-root {
+    .#{$name} {
+      @content;
+    }
+  }
+}
+
+//---------------------------------------------
+// Creates an Element
+//---------------------------------------------
+// If given:
+// +new(product-item)
+//  +has(title)
+//
+// Produces:
+// .product-item {}
+// .product-item__title {}
+//
+// If given:
+// +new(person)
+//   +when(female)
+//    +has(hand, person) refers to the parent scope
+//
+// Produces:
+// .person {}
+// .person--female {}
+// .person--female .person__hand {}
+//
+
+@mixin has($name, $childOf: "") {
+  @if ($childOf != "") {
+    .#{$childOf}__#{$name} {
+      @content;
+    }
+  } @else {
+    @at-root {
+      &__#{$name} {
+        @content;
+      }
+    }
+  }
+}
+
+//-----------------------------------------------
+// Creates a behaviorial State
+// -----------------------------------------
+// If given:
+// +new(menu)
+//   +has(item)
+//     +if(active)
+//
+// Produces:
+// .menu {}
+// .menu__item {}
+// .menu__item.is-active {}
+
+@mixin if($state) {
+  &.is-#{$state} {
+    @content;
+  }
+}
+
+//----------------------------------------------
+// Creates a Modifier
+// ---------------------------------------------
+// If given:
+// +new(person)
+//   +when(female)
+//
+// Produces:
+// .person {}
+// .person--female {}
+
+@mixin when($name) {
+  @at-root {
+    &--#{$name} {
+      @content;
+    }
+  }
+}
+
+//-----------------------------------------------
+// Allows importing Blocks into other Blocks
+//-----------------------------------------------
+// Uses @extend, so BEWARE. This is experimental,
+// may mess up your code, so double-check that the
+// output is what you want.
+//
+// This potentially allows you to create blocks
+// (components, modules etc.) seperately and instead
+// load them into a parent block / component similar
+// to something like React.
+//
+// As a silly example, let's say you've made
+// a List component and your Product
+// component should be imported into, rather than
+// nested as a +has:
+//
+// +new(product)
+//   color: red
+//   height: 50px
+//   width: 100px
+//
+// +new(list)
+//   display: block
+//   margin: 0
+//
+//   +import(product)
+//
+// Note that we're using the generated class name
+// as the parameter value in +import. So just saying
+// +import(product) won't work (unless you wrote
+// +new(product) without setting a type).
+
+@mixin import($something) {
+  @at-root {
+    & .#{$something} {
+      @extend .#{$something};
+      @content;
+    }
+  }
+}

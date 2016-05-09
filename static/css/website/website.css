@@ -458,20 +458,20 @@ a > svg {
 .head__layer--stars {
   width: 100%;
   height: 100%;
-  background: url('static/scss/website/components/head/stars-large.png?41d42') top left;
+  background: url('../../../static/scss/website/components/head/stars-large.png?41d42') top left;
 }
 
 .head__layer--stars2 {
   width: 100%;
   height: 100%;
-  background: url('static/scss/website/components/head/stars-large.png?41d42') bottom right;
+  background: url('../../../static/scss/website/components/head/stars-large.png?41d42') bottom right;
 }
 
 .head__layer--mountains {
   width: 100%;
   height: 100%;
   background-size: auto;
-  background-image: url('static/i/dest/website/components/head/mountains.png?d2e');
+  background-image: url('../../../static/i/dest/website/components/head/mountains.png?d2e');
   background-repeat: no-repeat;
   background-position: 50% 100%;
 }
@@ -482,7 +482,7 @@ a > svg {
   top: 10%;
   width: 252px;
   height: 268px;
-  background-image: url('static/i/dest/website/components/head/komarr.png?d4df');
+  background-image: url('../../../static/i/dest/website/components/head/komarr.png?d4df');
 }
 
 .head__layer--brr {
@@ -491,7 +491,7 @@ a > svg {
   margin-top: -115px;
   width: 330px;
   height: 330px;
-  background-image: url('static/i/dest/website/components/head/brr-clouds.png?1d37c');
+  background-image: url('../../../static/i/dest/website/components/head/brr-clouds.png?1d37c');
 }
 
 .clearfix:after {
@@ -600,16 +600,16 @@ a > svg {
   }
 
   .head__layer--mountains {
-    background-image: url('static/i/dest/website/components/head/mountains@2x.png?2534');
+    background-image: url('../../../static/i/dest/website/components/head/mountains@2x.png?2534');
   }
 
   .head__layer--komarr {
-    background-image: url('static/i/dest/website/components/head/komarr@2x.png?f4f7');
+    background-image: url('../../../static/i/dest/website/components/head/komarr@2x.png?f4f7');
     background-size: 252px 268px;
   }
 
   .head__layer--brr {
-    background-image: url('static/i/dest/website/components/head/brr-clouds@2x.png?1f402');
+    background-image: url('../../../static/i/dest/website/components/head/brr-clouds@2x.png?1f402');
     background-size: 330px 330px;
   }
 }

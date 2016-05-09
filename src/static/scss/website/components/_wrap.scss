@@ -1,8 +1,0 @@
-.wrap {
-  padding: rem(32 0 0);
-  background: #131417;
-  min-height: 100vh;
-  @include bp(wide) {
-    padding: rem(44 32);
-  }
-}

@@ -1,15 +1,17 @@
 .content {
+  @include bp(wide) {
+    padding: rem(16 16 32);
+
+    border-radius: rem(24);
+  }
+
   position: relative;
 
   max-width: 960px;
   margin: auto;
   padding: rem(16 8 44);
-	
-	@include bp(wide) {
-  	border-radius: rem(24);
-  	padding: rem(16 16 32);
-  }
-  background: lighten(#799ca5,20%);
+
+  background: #d9e5e8;
 }
 
 .content__title {
@@ -45,17 +47,16 @@
 }
 
 .content__cols {
-
-	@include bp(wide) {
-		display: flex;
-	}
-  
+  @include bp(wide) {
+    display: flex;
+  }
 }
 
 .content__col {
   @include bp(wide) {
-  	width: 50%;
+    width: 50%;
   }
+
   padding: rem(0 24);
 }
 

@@ -1,8 +1,0 @@
-// Theme specific styles
-// $theme is a theme name
-// For ex. "light-theme"
-@mixin theme($theme) {    
-    .#{$theme} & {
-        @content;
-    }
-}

@@ -15,13 +15,13 @@ options.browserSync = {
 };
 
 // List of sources to extract localized styles.
-options.localize = ['website.scss'];
+options.localize = [];
 
 // List of styles to apply rtl-postprocessor.
 options.rtlize = ['*-ar.css'];
 
 // Create rtl copy compiled from this sources, -rtl suffix will be added.
-options.rtlcopy = ['website.scss'];
+options.rtlcopy = [];
 
 // Directories names.
 options.dirs = {

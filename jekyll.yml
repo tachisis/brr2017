@@ -1,3 +1,3 @@
 title: Barrayar
 
-exclude: [node_modules, package.json, npm-debug.log, Gruntfile.js, scss]
+exclude: [node_modules, package.json, npm-debug.log, Gruntfile.js, static/scss]

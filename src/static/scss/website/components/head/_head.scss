@@ -24,14 +24,26 @@
   width: 100%;
   height: 100%;
   
-  background: resolve('website/components/head/stars-large.png') top left;
+  @include background-retina(
+  'website/components/head/stars-large.png',
+  'website/components/head/stars-large.png',
+  $bg-size: auto
+  );
+
+  background-position: top left;
 }
 
 .head__layer--stars2 {
   width: 100%;
   height: 100%;
   
-  background: resolve('website/components/head/stars-large.png') bottom right;
+  @include background-retina(
+  'website/components/head/stars-large.png',
+  'website/components/head/stars-large.png',
+  $bg-size: auto
+  );
+  
+  background-position: bottom right;
 }
 
 .head__layer--mountains {

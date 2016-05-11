@@ -28,16 +28,17 @@
 </head>
 
 <body>
-    {% include head.html %}
-    
-    <div class="wrap">
-        {{ content }}
-    </div>
+  <div style="display:none;">{% include svg-sprite-website.html %}</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+  {% include head.html %}
+  
+  <div class="wrap">
+      {{ content }}
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
   <script>
-
-  var layers = [],
+    var layers = [],
       layerElements = document.getElementsByClassName('js-layer'),
       _scrollY = window.scrollY;
 

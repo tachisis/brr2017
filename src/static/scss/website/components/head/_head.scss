@@ -1,9 +1,13 @@
 .head {
-  position: relative;
   @include bp(wide) {
     height: 60vh;
   }
+
+  position: relative;
+
   height: 40vh;
+  max-height: 480px;
+
   background: #375674;
   background: linear-gradient(to bottom, #253a4e 0%, #375674 60%, #537f90 100%);
   background-attachment: fixed;
@@ -11,9 +15,11 @@
 
 .head__layers {
   position: absolute;
+
+  overflow: hidden;
+
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 .head__layer {
@@ -21,66 +27,67 @@
 }
 
 .head__layer--stars {
-  width: 100%;
-  height: 100%;
-  
   @include background-retina(
   'website/components/head/stars-large.png',
   'website/components/head/stars-large.png',
   $bg-size: auto
   );
+
+  width: 100%;
+  height: 100%;
 
   background-position: top left;
 }
 
 .head__layer--stars2 {
-  width: 100%;
-  height: 100%;
-  
   @include background-retina(
   'website/components/head/stars-large.png',
   'website/components/head/stars-large.png',
   $bg-size: auto
   );
-  
+
+  width: 100%;
+  height: 100%;
+
   background-position: bottom right;
 }
 
 .head__layer--mountains {
-  width: 100%;
-  height: 100%;
-  
   @include background-retina(
   'website/components/head/mountains.png',
   'website/components/head/mountains@2x.png',
   $bg-size: auto
   );
-  
+
+  width: 100%;
+  height: 100%;
+
   background-repeat: no-repeat;
   background-position: 50% 100%;
 }
 
 .head__layer--komarr {
-  left: 56%;
-  margin-left: -120px;
-  top: 10%;
-
   @include background-retina(
   'website/components/head/komarr.png',
   'website/components/head/komarr@2x.png',
   true
   );
+
+  top: 10%;
+  left: 56%;
+
+  margin-left: -120px;
 }
 
 .head__layer--brr {
-  top: 40%;
-  left: 30%;
-  
-  margin-top: -115px;
-  
   @include background-retina(
   'website/components/head/brr-clouds.png',
   'website/components/head/brr-clouds@2x.png',
   true
   );
+
+  top: 40%;
+  left: 30%;
+
+  margin-top: -115px;
 }

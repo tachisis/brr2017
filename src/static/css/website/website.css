@@ -248,12 +248,19 @@ a > svg {
   height: 16px;
   fill: currentColor; }
 
+.announce P {
+  font-size: 0.875rem; }
+
 .content {
   position: relative;
   max-width: 960px;
   margin: auto;
-  padding: 1rem 0.5rem 2.75rem;
+  padding: 1.5rem 1rem 2.75rem;
   background: #d9e5e8; }
+  .content h1, .content h2, .content h3 {
+    margin: 0 0 0.5rem; }
+  .content p {
+    margin: 0 0 0.5rem; }
 
 .content__title {
   font-weight: bold;
@@ -276,15 +283,8 @@ a > svg {
   display: block;
   letter-spacing: 1px; }
 
-.content__col {
-  padding: 0rem 1.5rem; }
-
-.content__tldr {
-  margin: 0;
-  padding: 0; }
-  .content__tldr LI {
-    margin-bottom: 0.5rem;
-    list-style-type: none; }
+.content__cols {
+  margin-bottom: 1rem; }
 
 .content__roles {
   font-style: italic;
@@ -298,6 +298,21 @@ a > svg {
     content: '';
     background: #394255; }
 
+.list {
+  margin: 0;
+  padding: 0 0 0 1rem;
+  font-size: 0.875rem; }
+  .list LI {
+    margin-bottom: 0.5rem; }
+
+.tldr {
+  margin: 0;
+  padding: 0;
+  font-size: 0.875rem; }
+  .tldr LI {
+    margin-bottom: 0.5rem;
+    list-style-type: none; }
+
 .wrap {
   padding: 2rem 0rem 0rem;
   background: #131417;
@@ -306,56 +321,67 @@ a > svg {
 .head {
   position: relative;
   height: 40vh;
+  max-height: 480px;
   background: #375674;
   background: linear-gradient(to bottom, #253a4e 0%, #375674 60%, #537f90 100%);
   background-attachment: fixed; }
 
 .head__layers {
   position: absolute;
+  overflow: hidden;
   width: 100%;
-  height: 100%;
-  overflow: hidden; }
+  height: 100%; }
 
 .head__layer {
   position: absolute; }
 
 .head__layer--stars {
-  width: 100%;
-  height: 100%;
   background-size: auto;
   background-image: url('/static/i/dest/website/components/head/stars-large.png?20576');
+  width: 100%;
+  height: 100%;
   background-position: top left; }
 
 .head__layer--stars2 {
-  width: 100%;
-  height: 100%;
   background-size: auto;
   background-image: url('/static/i/dest/website/components/head/stars-large.png?20576');
+  width: 100%;
+  height: 100%;
   background-position: bottom right; }
 
 .head__layer--mountains {
-  width: 100%;
-  height: 100%;
   background-size: auto;
   background-image: url('/static/i/dest/website/components/head/mountains.png?d2e');
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: 50% 100%; }
 
 .head__layer--komarr {
-  left: 56%;
-  margin-left: -120px;
-  top: 10%;
   width: 252px;
   height: 268px;
-  background-image: url('/static/i/dest/website/components/head/komarr.png?d4df'); }
+  background-image: url('/static/i/dest/website/components/head/komarr.png?d4df');
+  top: 10%;
+  left: 56%;
+  margin-left: -120px; }
 
 .head__layer--brr {
-  top: 40%;
-  left: 30%;
-  margin-top: -115px;
   width: 330px;
   height: 330px;
-  background-image: url('/static/i/dest/website/components/head/brr-clouds.png?1d37c'); }
+  background-image: url('/static/i/dest/website/components/head/brr-clouds.png?1d37c');
+  top: 40%;
+  left: 30%;
+  margin-top: -115px; }
+
+.social {
+  position: absolute;
+  top: -2.1875rem;
+  left: 2rem; }
+  .social A {
+    color: #799ca5; }
+  .social .ico {
+    width: 20px;
+    height: 20px; }
 
 .clearfix:after {
   display: table;
@@ -382,7 +408,7 @@ a > svg {
 @media all and (min-width: 60em) {
 
   .content {
-    padding: 1rem 1rem 2rem;
+    padding: 1.5rem 2rem 2.75rem;
     border-radius: 1.5rem; }
 
   .content__cols {
@@ -392,6 +418,10 @@ a > svg {
 
   .content__col {
     width: 50%; }
+
+  .content__col.announce {
+    width: 64%;
+    padding-right: 2.75rem; }
 
   .wrap {
     padding: 2.75rem 2rem; }
@@ -448,6 +478,11 @@ a > svg {
   .head__layer--brr {
     background-image: url('/static/i/dest/website/components/head/brr-clouds@2x.png?1f402');
     background-size: 330px 330px; } }
+
+@media all and (max-width: 29.9375em) {
+
+  .content__title {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); } }
 
 @media all and (max-width: 47.9375em) {
 

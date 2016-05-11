@@ -1,5 +1,9 @@
 .announce {
   P {
     font-size: rem(14);
+    
+    @include bp(huge) {
+      font-size: rem(16);
+    }
   }
 }

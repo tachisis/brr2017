@@ -1,9 +1,12 @@
 .list {
+  @include bp(huge) {
+    font-size: rem(16);
+  }
+
+  font-size: rem(14);
+
   margin: 0;
   padding: 0 0 0 1rem;
-  
-  font-size: rem(14);
-  
   LI {
     margin-bottom: rem(8);
   }

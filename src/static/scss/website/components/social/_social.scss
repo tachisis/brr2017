@@ -1,14 +1,32 @@
 .social {
-  position: absolute;
-  top: rem(-35);
-  left: rem(32);
-  
-  A {
-    color: #799ca5;
+  @include bp(wide) {
+    left: rem(32);
+    top: rem(-32);
   }
 
-  .ico {
-    width: 20px;
-    height: 20px;
+  position: absolute;
+  top: rem(-64);
+  left: rem(16);
+}
+
+.social__item {
+  @include bp(wide) {
+    display: inline-block;
+    padding-bottom: 0;
+  }
+
+  display: block;
+  padding-bottom: rem(4);
+  font-weight: bold;
+  line-height: 1;
+
+  margin-right: rem(12);
+
+  vertical-align: middle;
+  text-decoration: none;
+
+  color: #799ca5;
+  &:hover {
+    color: darken(#799ca5, 15%);
   }
 }

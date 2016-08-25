@@ -296,6 +296,20 @@ a > svg {
   .list LI {
     margin-bottom: 0.5rem; }
 
+.nav {
+  margin-bottom: 1rem; }
+
+.nav__item {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1;
+  margin-right: 0.75rem;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #799ca5; }
+  .nav__item:hover {
+    color: #54757d; }
+
 .tldr {
   font-size: 0.875rem;
   margin: 0;
@@ -423,6 +437,12 @@ a > svg {
   .content__col.announce {
     width: 64%;
     padding-right: 2.75rem; }
+
+  .nav {
+    left: 38%;
+    top: -2rem;
+    position: absolute;
+    margin-bottom: 0; }
 
   .wrap {
     padding: 2.75rem 2rem; }

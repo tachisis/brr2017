@@ -1,8 +1,9 @@
 .nav {
   @include bp(wide) {
-    left: 30%;
-    top: rem(-32);
     position: absolute;
+    top: rem(-32);
+    left: 30%;
+
     margin-bottom: 0;
   }
 
@@ -11,16 +12,21 @@
 
 .nav__item {
   @include bp(wide) {
+    font-size: rem(16);
+
     margin-right: rem(12);
+
     color: #799ca5;
     &:hover {
       color: darken(#799ca5, 15%);
     }
   }
-  display: inline-block;
+
   font-size: rem(15);
   font-weight: bold;
   line-height: 1;
+
+  display: inline-block;
 
   margin-right: rem(4);
 

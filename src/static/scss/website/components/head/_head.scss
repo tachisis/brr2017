@@ -1,16 +1,20 @@
 .head {
-  @include bp(wide) {
-    height: 60vh;
-  }
-
   position: relative;
 
-  height: 40vh;
+  height: 26vh;
   max-height: 480px;
 
   background: #375674;
   background: linear-gradient(to bottom, #253a4e 0%, #375674 60%, #537f90 100%);
   background-attachment: fixed;
+  
+  .is-main & {
+    @include bp(wide) {
+      height: 60vh;
+    }
+
+    height: 40vh;
+  }
 }
 
 .head__layers {

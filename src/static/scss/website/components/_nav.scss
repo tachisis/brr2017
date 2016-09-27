@@ -1,6 +1,6 @@
 .nav {
   @include bp(wide) {
-    left: 38%;
+    left: 30%;
     top: rem(-32);
     position: absolute;
     margin-bottom: 0;
@@ -10,17 +10,22 @@
 }
 
 .nav__item {
+  @include bp(wide) {
+    margin-right: rem(12);
+    color: #799ca5;
+    &:hover {
+      color: darken(#799ca5, 15%);
+    }
+  }
   display: inline-block;
+  font-size: rem(15);
   font-weight: bold;
   line-height: 1;
 
-  margin-right: rem(12);
+  margin-right: rem(4);
 
   vertical-align: middle;
   text-decoration: none;
 
-  color: #799ca5;
-  &:hover {
-    color: darken(#799ca5, 15%);
-  }
+  color: color(link);
 }

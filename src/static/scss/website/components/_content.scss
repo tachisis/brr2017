@@ -17,7 +17,7 @@
   H3 {
     line-height: 1.1;
 
-    margin: 0 0 rem(8);
+    margin: rem(24 0 8);
   }
   P {
     margin: 0 0 rem(8);
@@ -38,12 +38,21 @@
   top: rem(-72);
   right: rem(16);
 
-  margin: 0;
+  margin: 0 !important;
 
   text-transform: uppercase;
 
   color: #799ca5;
   text-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
+.content__title-link {
+  text-decoration: none;
+  color: #799ca5;
+  
+  &:hover {
+    color: inherit;
+  }
 }
 
 .content__title-main {

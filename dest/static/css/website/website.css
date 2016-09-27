@@ -173,7 +173,7 @@ HTML {
   direction: ltr; }
 
 A {
-  color: #cc6600; }
+  color: #507ea9; }
   A:hover {
     color: #ff8000; }
 
@@ -201,7 +201,7 @@ a > svg {
   color: #fff;
   border: 0;
   border-radius: 0.125rem;
-  background: #cc6600; }
+  background: #507ea9; }
   .btn:hover {
     background-color: #ff8000;
     text-decoration: none; }
@@ -209,7 +209,7 @@ a > svg {
     outline: none; }
   .btn[disabled], .btn[disabled]:hover {
     font-weight: normal;
-    background-color: #cc6600; }
+    background-color: #507ea9; }
   .btn._default {
     color: #666;
     background: #f0f0f0; }
@@ -260,7 +260,7 @@ a > svg {
   background: #d9e5e8; }
   .content H1, .content H2, .content H3 {
     line-height: 1.1;
-    margin: 0 0 0.5rem; }
+    margin: 1.5rem 0rem 0.5rem; }
   .content P {
     margin: 0 0 0.5rem; }
 
@@ -270,10 +270,16 @@ a > svg {
   position: absolute;
   top: -4.5rem;
   right: 1rem;
-  margin: 0;
+  margin: 0 !important;
   text-transform: uppercase;
   color: #799ca5;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); }
+
+.content__title-link {
+  text-decoration: none;
+  color: #799ca5; }
+  .content__title-link:hover {
+    color: inherit; }
 
 .content__title-main {
   font-size: 2.75rem;
@@ -301,14 +307,13 @@ a > svg {
 
 .nav__item {
   display: inline-block;
+  font-size: 0.9375rem;
   font-weight: bold;
   line-height: 1;
-  margin-right: 0.75rem;
+  margin-right: 0.25rem;
   vertical-align: middle;
   text-decoration: none;
-  color: #799ca5; }
-  .nav__item:hover {
-    color: #54757d; }
+  color: #507ea9; }
 
 .tldr {
   font-size: 0.875rem;
@@ -439,10 +444,17 @@ a > svg {
     padding-right: 2.75rem; }
 
   .nav {
-    left: 38%;
+    left: 30%;
     top: -2rem;
     position: absolute;
     margin-bottom: 0; }
+
+  .nav__item {
+    margin-right: 0.75rem;
+    color: #799ca5; }
+
+  .nav__item:hover {
+    color: #54757d; }
 
   .wrap {
     padding: 2.75rem 2rem; }

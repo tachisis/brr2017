@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="description" content="Ролевая игра живого действия по мотивам романов Л. М. Буджолд «Сага о Форкосиганах». Ленобласть, май 2017 года, МГ «Флоренция»">
+    <meta name="author" content="МГ «Флоренция»">
+    <meta name="title" content="РИ «Барраяр. Время перемен»" />
+    <meta name="keywords" content="ролевая игра, РИ, Барраяр">
+    <meta property="og:site_name" content="BRR2017" />
+    <meta property="og:title" content="РИ «Барраяр. Время перемен»" />
+    <meta property="og:url" content="http://brr2017.ru" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:description" content="Ролевая игра живого действия по мотивам романов Л. М. Буджолд «Сага о Форкосиганах». Ленобласть, май 2017 года, МГ «Флоренция»" />
+    <link rel="image_src" href="http://brr2017.ru/static/i/dest/share.jpg">
+    <meta property="og:image" content="http://brr2017.ru/static/i/dest/share.jpg" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="420" />
+    <meta name="twitter:image" content="http://brr2017.ru/static/i/dest/share.jpg" />
+    <meta name="twitter:title" content="РИ «Барраяр. Время перемен»" />
+    <meta name="twitter:description" content="Ролевая игра живого действия по мотивам романов Л. М. Буджолд «Сага о Форкосиганах». Ленобласть, май 2017 года, МГ «Флоренция»" />
+    <title>
+      
+        Боевые правила
+      
+    </title>
+    <link rel="stylesheet" href="/static/css/website/website.css" type="text/css">
+    <script>(function(d){var f=function(){var h=d.getElementsByTagName('head')[0],l=d.createElement('link');l.rel='stylesheet';l.href='/static/fonts/fonts.css';h.appendChild(l)},r=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;if(r){r(f)}else{window.addEventListener('load',f)}})(document)</script>
+    <noscript><link rel="stylesheet" href="/static/fonts/fonts.css"></noscript>
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><![endif]-->
+</head>
+
+<body>
+  <header class="head">
+	<div class="head__layers">
+		<div class="head__layer head__layer--stars  js-layer" data-offset="0.7"></div>
+		<div class="head__layer head__layer--stars2  js-layer" data-offset="0.6"></div>
+		<div class="head__layer head__layer--komarr js-layer" data-offset="0.4"></div>
+		<div class="head__layer head__layer--brr js-layer" data-offset="0.2"></div>
+		<div class="head__layer head__layer--mountains"></div>
+	</div>	
+</header>
+  
+  <div class="wrap">
+    <article class="content">
+      <h1 class="content__title"><a href="/" class="content__title-link"><span class="content__title-main">Барраяr</span><span class="content__title-sub">Время перемен</span></a></h1>
+
+      <nav class="social">
+	<a href="https://vk.com/brr2017" title="Сообщество игры ВКонтакте" target="_blank" class="social__item">VK</a>
+	<a href="http://eepurl.com/b1lSOv" title="Подписаться на обновления" target="_blank" class="social__item">Подписка</a>
+	<a href="http://goo.gl/forms/JTYJUck5g2" title="Заявка" target="_blank" class="social__item">Заявка</a>
+</nav>
+
+
+      <nav class="nav">
+	<a href="/roles/" title="Роли" class="nav__item">Роли</a>
+	<a href="/rules/" title="Правила" class="nav__item">Правила</a>
+	<a href="/world/" title="Мир" class="nav__item">Мир</a>
+	<a href="/org/" title="Оргинфо" class="nav__item">Оргинфо</a>
+	<a href="/help/" title="Помощь" class="nav__item">Помощь</a>
+</nav>
+
+      
+      <h1 id="section">Здесь будут боевые правила</h1>
+
+      
+    </article>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+  <script>
+    var layers = [],
+      layerElements = document.getElementsByClassName('js-layer'),
+      _scrollY = window.scrollY;
+
+    function init() {
+      for (var i = 0; i < layerElements.length; i += 1) {
+        var el = layerElements[i];
+        var offset = layerElements[i].dataset.offset;
+        layers.push({el: el, y: 0, offset: offset});
+      }
+
+      window.addEventListener('scroll', handle_scroll);
+      requestAnimationFrame(animate);
+    }
+
+    function handle_scroll(e) {
+      _scrollY = window.scrollY;
+    }
+
+    function animate() {
+      for (var i = 0; i < layers.length; i += 1) {
+        var oldY = layers[i].y;
+        layers[i].y = _scrollY * layers[i].offset;
+
+        if (oldY !== layers[i].y) {
+          layers[i].el.style.transform = 'translateY(' + layers[i].y + 'px)';
+        }
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    init();
+  </script>
+
+</body>
+
+</html>

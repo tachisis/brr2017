@@ -306,10 +306,10 @@ a > svg {
   margin-bottom: 1rem; }
 
 .nav__item {
-  display: inline-block;
   font-size: 0.9375rem;
   font-weight: bold;
   line-height: 1;
+  display: inline-block;
   margin-right: 0.25rem;
   vertical-align: middle;
   text-decoration: none;
@@ -330,11 +330,13 @@ a > svg {
 
 .head {
   position: relative;
-  height: 40vh;
+  height: 26vh;
   max-height: 480px;
   background: #375674;
   background: linear-gradient(to bottom, #253a4e 0%, #375674 60%, #537f90 100%);
   background-attachment: fixed; }
+  .is-main .head {
+    height: 40vh; }
 
 .head__layers {
   position: absolute;
@@ -444,12 +446,13 @@ a > svg {
     padding-right: 2.75rem; }
 
   .nav {
-    left: 30%;
-    top: -2rem;
     position: absolute;
+    top: -2rem;
+    left: 30%;
     margin-bottom: 0; }
 
   .nav__item {
+    font-size: 1rem;
     margin-right: 0.75rem;
     color: #799ca5; }
 
@@ -459,7 +462,7 @@ a > svg {
   .wrap {
     padding: 2.75rem 2rem; }
 
-  .head {
+  .is-main .head {
     height: 60vh; }
 
   .social {

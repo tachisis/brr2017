@@ -22,6 +22,19 @@
   P {
     margin: 0 0 rem(8);
   }
+
+  TABLE {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-bottom: rem(8);
+  }
+
+  TD,TH {
+    padding: rem(8);
+    border: 1px solid color(text,light);
+    font-size: rem(14);
+  }
 }
 
 .content__title {

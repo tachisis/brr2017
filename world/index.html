@@ -64,50 +64,55 @@
 </nav>
 
       
-      <h1 id="section">Мир Барраяра</h1>
+      <h1 id="section">Информация о сеттинге</h1>
 
-<p>Публикация информации о мире начнется в октябре.</p>
+<ul>
+  <li><a href="/world/brr-history/">История Барраяра</a></li>
+  <li>Барраяр сейчас</li>
+  <li>Комарра</li>
+  <li>Другие галактические государства</li>
+</ul>
 
       
     </article>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
-  <script>
-    var layers = [],
-      layerElements = document.getElementsByClassName('js-layer'),
-      _scrollY = window.scrollY;
+<script>
+  var layers = [],
+    layerElements = document.getElementsByClassName('js-layer'),
+    _scrollY = window.scrollY;
 
-    function init() {
-      for (var i = 0; i < layerElements.length; i += 1) {
-        var el = layerElements[i];
-        var offset = layerElements[i].dataset.offset;
-        layers.push({el: el, y: 0, offset: offset});
+  function init() {
+    for (var i = 0; i < layerElements.length; i += 1) {
+      var el = layerElements[i];
+      var offset = layerElements[i].dataset.offset;
+      layers.push({el: el, y: 0, offset: offset});
+    }
+
+    window.addEventListener('scroll', handle_scroll);
+    requestAnimationFrame(animate);
+  }
+
+  function handle_scroll(e) {
+    _scrollY = window.scrollY;
+  }
+
+  function animate() {
+    for (var i = 0; i < layers.length; i += 1) {
+      var oldY = layers[i].y;
+      layers[i].y = _scrollY * layers[i].offset;
+
+      if (oldY !== layers[i].y) {
+        layers[i].el.style.transform = 'translateY(' + layers[i].y + 'px)';
       }
-
-      window.addEventListener('scroll', handle_scroll);
-      requestAnimationFrame(animate);
     }
 
-    function handle_scroll(e) {
-      _scrollY = window.scrollY;
-    }
+    requestAnimationFrame(animate);
+  }
 
-    function animate() {
-      for (var i = 0; i < layers.length; i += 1) {
-        var oldY = layers[i].y;
-        layers[i].y = _scrollY * layers[i].offset;
-
-        if (oldY !== layers[i].y) {
-          layers[i].el.style.transform = 'translateY(' + layers[i].y + 'px)';
-        }
-      }
-
-      requestAnimationFrame(animate);
-    }
-
-    init();
-  </script>
+  init();
+</script>
 
 </body>
 

@@ -305,7 +305,9 @@ a > svg {
   padding-bottom: 1rem; }
 
 .joinrpg-roles-table {
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  margin-bottom: 1rem !important;
+  border: 1px solid #888; }
   .joinrpg-roles-table TD {
     border-width: 1px 0;
     border-color: #888; }

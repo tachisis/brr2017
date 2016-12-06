@@ -19,8 +19,13 @@
 
     margin: rem(24 0 8);
   }
+
   P {
     margin: 0 0 rem(8);
+  }
+
+  LI {
+    margin: 0 0 rem(4);
   }
 
   TABLE {
@@ -34,6 +39,14 @@
     padding: rem(8);
     border: 1px solid color(text,light);
     font-size: rem(14);
+  }
+
+  BLOCKQUOTE {
+    text-align: left;
+    font-style: italic;
+    padding: 0 rem(16) 0;
+    margin: rem(16) 0;
+    border-left: 3px solid color(link);
   }
 }
 
@@ -62,7 +75,7 @@
 .content__title-link {
   text-decoration: none;
   color: #799ca5;
-  
+
   &:hover {
     color: inherit;
   }
@@ -93,7 +106,7 @@
 
 .content__col {
   padding-bottom: rem(16);
-  
+
   @include bp(wide) {
     width: 50%;
     &.announce {

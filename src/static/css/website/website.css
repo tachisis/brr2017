@@ -263,6 +263,8 @@ a > svg {
     margin: 1.5rem 0rem 0.5rem; }
   .content P {
     margin: 0 0 0.5rem; }
+  .content LI {
+    margin: 0 0 0.25rem; }
   .content TABLE {
     width: 100%;
     table-layout: fixed;
@@ -272,6 +274,12 @@ a > svg {
     padding: 0.5rem;
     border: 1px solid #333;
     font-size: 0.875rem; }
+  .content BLOCKQUOTE {
+    text-align: left;
+    font-style: italic;
+    padding: 0 1rem 0;
+    margin: 1rem 0;
+    border-left: 3px solid #507ea9; }
 
 .content__title {
   font-weight: bold;

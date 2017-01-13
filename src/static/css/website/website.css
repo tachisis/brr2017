@@ -194,6 +194,12 @@ INPUT::-ms-reveal {
 a > svg {
   pointer-events: none; }
 
+HR {
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-width: 0 0 1px;
+  background: none; }
+
 .btn {
   font-size: 1rem;
   padding: 0.625rem 1.25rem;

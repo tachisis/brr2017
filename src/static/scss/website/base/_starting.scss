@@ -53,3 +53,9 @@ a > svg {
   pointer-events: none;
 }
 
+HR {
+  margin-bottom: rem(8);
+  border: 1px solid #ccc;
+  border-width: 0 0 1px;
+  background: none;
+}

@@ -10,4 +10,4 @@ permalink: /help/
 - [Костюм](/help/costume/)
 - [Кросспол и как с ним играть](/help/cross/)
 - [Танцы](/help/dance/)
-- Полезные ссылки
+- [Полезные ссылки](/help/links/)

@@ -9,8 +9,13 @@ permalink: /world/brr-social/
 &larr; [Назад к списку статей](/world/)
 
 - [Общественное устройство](/world/brr-social/#section-1)
+  - [Форы](/world/brr-social/#section-2)
+  - [Простолюдины](/world/brr-social/#section-4)
 - [Политическая жизнь общества](/world/brr-social/#section-5)
 - [Культура](/world/brr-social/#section-9)
+  - [Отношение к другим культурам](/world/brr-social/#section-10)
+  - [Религия](/world/brr-social/#section-12)
+  - [Церемонии](/world/brr-social/#section-13)
 
 ## Общественное устройство
 

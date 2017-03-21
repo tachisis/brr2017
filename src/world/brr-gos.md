@@ -300,7 +300,7 @@ __Примерный тайминг:__
 
 Исследовательский центр, направление специальной биохимии:
 
-- руководитель — капитан [Анита Блэкхарт](http://joinrpg.ru/67/character/7054){:target="_blank"}
+- руководитель — майор [Анита Блэкхарт](http://joinrpg.ru/67/character/7054){:target="_blank"}
 - капитан [Дэниэл Марков](http://joinrpg.ru/67/character/7052){:target="_blank"}
 - лейтенант [Том Вааген](http://joinrpg.ru/67/character/7053){:target="_blank"}.
 

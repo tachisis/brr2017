@@ -30,6 +30,7 @@ permalink: /rules/
 	- [Дуэль](/rules/war/#section-5)
 	- [Тайное убийство](/rules/war/#section-6)
 	- [Самоубийство](/rules/war/#section-7)
+	- [Газовая атака (граната)](/rules/war/#section-8)
 - __[Медицина](/rules/med/)__ (4 минуты чтения)
 	- [Общие положения](/rules/med/#section-1)
 	- [Вещества и антураж](/rules/med/#section-2)

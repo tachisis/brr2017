@@ -39,6 +39,15 @@ permalink: /rules/
 	- [Иные мед. манипуляции](/rules/med/#section-10)
 	- [Смерть](/rules/med/#section-11)
 - __[Костюм](/help/costume/)__
-- Преступления и наказания
-- __[Политика](/rules/politics)__
+- __[Преступления и наказания](/rules/crime/)__ (3 минуты чтения)
+	- [Задержание](/rules/crime/#section-1)
+	- [Обыск](/rules/crime/#section-2)
+	- [Проникновение в помещение](/rules/crime/#section-3)
+	- [Судебно-медицинская экспертиза](/rules/crime/#section-4)
+	- [Суд](/rules/crime/#section-5)
+	- [Дипломатический иммунитет](/rules/crime/#section-6)
+- __[Политика](/rules/politics)__ (4 минуты чтения)
+	- [Совет Графов на игре](/rules/politics/#section-1)
+	- [Политическое влияние в игре](/rules/politics/#section-6)
+	- [Экономика на игре](/rules/politics/#section-8)
 - Электронные системы

@@ -50,4 +50,4 @@ permalink: /rules/
 	- [Совет Графов на игре](/rules/politics/#section-1)
 	- [Политическое влияние в игре](/rules/politics/#section-6)
 	- [Экономика на игре](/rules/politics/#section-8)
-- Электронные системы
+- __[Электронные системы](/rules/web/)__

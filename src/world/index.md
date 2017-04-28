@@ -6,6 +6,11 @@ permalink: /world/
 
 # Информация о сеттинге
 
+## Карты
+
+- [Карта ПВ-туннелей](/world/maps/#section-1)
+- [Карта Барраяра](/world/maps/#section-2)
+
 ## Барраяр
 
 - [История Барраяра](/world/brr-history/)

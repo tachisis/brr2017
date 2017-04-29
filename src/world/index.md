@@ -10,6 +10,8 @@ permalink: /world/
 
 - [Карта ПВ-туннелей](/world/maps/#section-1)
 - [Карта Барраяра](/world/maps/#section-2)
+- [Карта Форбарр-Султаны](/world/maps/#section-3)
+- [Адресная книга (расселение)](/world/maps/#section-4)
 
 ## Барраяр
 

@@ -6,6 +6,12 @@ permalink: /world/maps/
 
 # Карты
 
+&larr; [Назад к списку статей](/world/)
+
+- [Карта ПВ-туннелей](/world/maps/#section-1)
+- [Карта Барраяра](/world/maps/#section-2)
+- [Карта Форбарр-Султаны](/world/maps/#section-3)
+
 ## Карта ПВ-туннелей
 
 <img src="https://img-fotki.yandex.ru/get/215222/21845812.b/0_192b41_71ff0152_orig" alt="Карта ПВ-туннелей">
@@ -20,4 +26,10 @@ permalink: /world/maps/
 
 _По клику откроется большая версия_
 
-<a href="https://img-fotki.yandex.ru/get/167717/21845812.b/0_192c10_a955b57c_orig" target="_blank"><img src="https://img-fotki.yandex.ru/get/167717/21845812.b/0_192c10_a955b57c_XL" alt="Карта Барраяра" /></a>
+<a href="https://img-fotki.yandex.ru/get/196365/21845812.b/0_192c5d_16a69271_orig" target="_blank"><img src="https://img-fotki.yandex.ru/get/196365/21845812.b/0_192c5d_16a69271_XL" alt="Карта Барраяра" /></a>
+
+## Карта Форбарр-Султаны
+
+_По клику откроется большая версия_
+
+<a href="https://img-fotki.yandex.ru/get/244791/21845812.b/0_192c49_4bb3e160_orig"><img src="https://img-fotki.yandex.ru/get/244791/21845812.b/0_192c49_4bb3e160_XL" alt="Карта Форбарр-Султаны"></a>

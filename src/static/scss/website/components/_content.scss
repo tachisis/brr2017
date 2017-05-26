@@ -48,6 +48,17 @@
     margin: rem(16) 0;
     border-left: 3px solid color(link);
   }
+  .list-double {
+    @include bp(wide) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      LI {
+        width: 49%;
+      }
+    }
+  }
 }
 
 .content__title {
